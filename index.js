@@ -4,6 +4,7 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 require('dotenv').config();
+dotenv.config();
 
 console.log("before db")
 mongoose.connect(process.env.MONGOURI).then(() => {
