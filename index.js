@@ -21,7 +21,7 @@ app.use(cookieParser())
 
 // CORS configuration
 const corsOptions = {
-    origin: 'https://stay-ease-front-end.vercel.app/Rooms',
+    origin: 'https://stay-ease-front-end.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
     exposedHeaders: 'Authorization',
@@ -33,7 +33,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.listen(3000, () => {
-    console.log("Server running on port 3000")
+    console.log("Server running Live on Glitch")
 })
 
 app.get('/', (req, res) => {

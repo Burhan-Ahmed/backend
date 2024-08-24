@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
             payment_method: paymentMethodId,
             confirmation_method: 'manual',
             confirm: true,
-            return_url: 'http://localhost:5173/',
+            return_url: 'https://stay-ease-front-end.vercel.app/',
         });
         console.log('paymentIntent:', paymentIntent);
 
