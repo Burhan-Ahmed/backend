@@ -32,7 +32,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.get('/pay', (req, res) => {
+router.get('/', (req, res) => {
     res.status(200).json({ message: 'Hello from Payment Page' });
 });
 
